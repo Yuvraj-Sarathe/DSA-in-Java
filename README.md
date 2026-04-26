@@ -3,9 +3,9 @@
 # 🧠 DSA Journey in Java 
 ### **Pattern-Based Problem Solving • Quantitative Progress Tracking**
 
-[![LeetCode Profile](https://img.shields.io/badge/LeetCode-Mikky__mlh-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Mikky_mlh/)
-[![Problems Solved](https://img.shields.io/badge/SOLVED-68_UNIQUE_PROBLEMS-success?style=for-the-badge)](https://leetcode.com/u/Mikky_mlh/)
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/Mikky-mlh/DSA-in-Java?style=for-the-badge&color=64ffda)](https://github.com/Mikky-mlh/DSA-in-Java)
+[![LeetCode Profile](https://img.shields.io/badge/LeetCode-Yuvraj__Sarathe-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Yuvraj_Sarathe/)
+[![Problems Solved](https://img.shields.io/badge/SOLVED-68_UNIQUE_PROBLEMS-success?style=for-the-badge)](https://leetcode.com/u/Yuvraj_Sarathe/)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/Yuvraj-Sarathe/DSA-in-Java?style=for-the-badge&color=64ffda)](https://github.com/Yuvraj-Sarathe/DSA-in-Java)
 
 **I build solutions that are earned, not copied.** This repository tracks my transition from brute-force attempts to structured pattern recognition.
 
@@ -21,8 +21,8 @@
 
 **Quick access to my work and professional profiles:**
 
-[![Main Portfolio](https://img.shields.io/badge/🌐_VIEW_PORTFOLIO-64ffda?style=flat-square&logo=google-chrome&logoColor=black)](https://mikky-mlh.github.io/Portfolio/)
-[![All Web Projects](https://img.shields.io/badge/💻_WEB_PROJECTS-1572B6?style=flat-square&logo=github-pages&logoColor=white)](https://mikky-mlh.github.io/Web-Projects/)
+[![Main Portfolio](https://img.shields.io/badge/🌐_VIEW_PORTFOLIO-64ffda?style=flat-square&logo=google-chrome&logoColor=black)](https://Yuvraj-Sarathe.github.io/Portfolio/)
+[![All Web Projects](https://img.shields.io/badge/💻_WEB_PROJECTS-1572B6?style=flat-square&logo=github-pages&logoColor=white)](https://Yuvraj-Sarathe.github.io/Web-Projects/)
 [![LinkedIn](https://img.shields.io/badge/🔗_LINKEDIN-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuvraj-sarathe)
 [![Email Me](https://img.shields.io/badge/📧_EMAIL_ME-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:yuvrajsarathe07@gmail.com)
 
@@ -120,7 +120,7 @@ Every solution in this repo adheres to **Interview-Grade Standards**:
 
 *68 Unique Problems • 95 Total Implementations • 12 Multi-Solution Problems*
 
-**Maintained by [Yuvraj Sarathe](https://github.com/Mikky-mlh)** • *B.Tech Cyber Security Student*
+**Maintained by [Yuvraj Sarathe](https://github.com/Yuvraj-Sarathe)** • *B.Tech Cyber Security Student*
 
 *Last System Update: January 2025*
 
