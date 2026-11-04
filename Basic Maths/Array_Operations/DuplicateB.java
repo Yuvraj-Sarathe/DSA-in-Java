@@ -1,5 +1,5 @@
 import java.util.Arrays;
-//! BAD BECAUSE SLOW AS FUCK
+//! BAD BECAUSE SLOW AS HELL
 public class DuplicateB {
     public boolean containsDuplicate(int[] nums) {
         // Sort first (O(n log n) - slow!)

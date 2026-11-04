@@ -1,28 +1,29 @@
+//! Using recursion: O(log n)
 class Pow {
     public double myPow(double x, int n) {
-        return recPow(x, (long)n);
-    }
-    
-    private double recPow(double x, long n) {
-        if (n == 0) {
-            return 1;
+        // Cast to long to safely prevent overflow from Integer.MIN_VALUE (-2147483648)
+        long N = n;
+        
+        // Handle negative exponents by taking the reciprocal of x and making N positive
+        if (N < 0) {
+            return 1 / fastPow(x, -N);
         }
         
-        if(n == 1){
-            return x;
-        }
+        return fastPow(x, N);
+    }
 
-        if(n < 0)
-        {
-            n = n* -1;
-            x = 1/x;
+    private double fastPow(double x, long n) {
+        if (n == 0) {
+            return 1.0;
         }
-
-        double halfPower = recPow(x, n / 2);
-        if (n % 2 == 0) {
-            return halfPower * halfPower;
-        } else {
-            return x * halfPower * halfPower;
+        
+        double half = fastPow(x, n / 2);
+        
+        if (n % 2 == 0) { // if even number of time we can make to power of 4 by multiplying squares
+            return half * half;
+        }
+        else {
+            return half * half * x; // cubes = x * square of x
         }
     }
 }
