@@ -13,28 +13,52 @@ import java.util.Map;
 */
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class Word_Pattern {
     public boolean wordPattern(String pattern, String s) {
-        HashMap<Character, String> map = new HashMap<>();
-        String[] str = s.split(" ");
+        Map<Character, String> ref = new HashMap<>();
+        Set<String> claimedWords = new HashSet<>();
 
-        if(str.length != pattern.length()) return false;
-
-        for(int i = 0 ; i < str.length ; i++) {
-            char c = pattern.charAt(i);
-            if(map.containsKey(c)) {
-                if(!map.get(c).equals(str[i])) {
-                    return false;
-                }
-            }else {
-                if(map.containsValue(str[i])) {
-                    return false;
-                }
-                map.put(c, str[i]);
-            }
+        String[] words = s.split(" ");
+        
+        if (words.length != pattern.length()) {
+            return false;
         }
 
+        for(int i=0; i<pattern.length(); i++){
+            char pChar = pattern.charAt(i);
+
+            if (ref.containsKey(pChar)) {
+                if (!words[i].equals(ref.get(pChar))) {
+                    return false;
+                }
+            } else {
+                if (claimedWords.contains(words[i])) {
+                    return false;
+                }
+                ref.put(pChar, words[i]);
+                claimedWords.add(words[i]);
+            }
+        }
+        
+        return true; 
+    }
+}
+
+//! Optimised:
+/*
+class Solution {
+    public boolean wordPattern(String pattern, String s) {
+        String[] w = s.split(" ");
+        if (pattern.length() != w.length) return false;
+        Map<Object, Integer> map = new HashMap<>();
+        for (Integer i = 0; i < pattern.length(); i++)
+        * Direct comparison
+            if (map.put(pattern.charAt(i), i) != map.put(w[i], i)) return false; 
         return true;
     }
 }
+*/
