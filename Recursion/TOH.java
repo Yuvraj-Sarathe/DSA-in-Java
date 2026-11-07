@@ -1,3 +1,7 @@
+//TODO: Solve Tower of Hanoi for n disks printing each move
+// Time: O(2^n - 1) - minimal number of moves
+// Space: O(n) - recursion stack
+
 import java.util.Scanner;
 public class TOH {
     private static int stepCount = 0;

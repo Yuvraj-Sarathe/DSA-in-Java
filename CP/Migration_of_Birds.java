@@ -1,3 +1,7 @@
+//TODO: Find the most frequently sighted bird type; ties resolve to the smallest id - HackerRank migratoryBirds
+// Time: O(n) - one frequency pass + one pass over at most 5 types
+// Space: O(1) - HashMap bounded by 5 bird types
+
 import java.io.*;
 import java.math.*;
 import java.security.*;

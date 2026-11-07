@@ -1,3 +1,7 @@
+//TODO: Count distinct ways to climb n stairs (1 or 2 steps) with memoised recursion - LeetCode 70
+// Time: O(n) - each subproblem solved once
+// Space: O(n) - memo array + recursion stack
+
 public class ClimbStairs {
     //! Recursion: O(n) time and O(n) space
     public int climbStairs(int n) {

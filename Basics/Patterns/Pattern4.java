@@ -1,0 +1,14 @@
+//TODO: Print the Pattern4 pattern: triangle where row number i is printed i times
+// Time: O(rows * cols) - nested loops print every cell
+// Space: O(1) - only loop counters
+
+public class Pattern4 {
+    public static void main(String[] args){
+        for(int i=1;i<=5;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+}

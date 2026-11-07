@@ -1,3 +1,7 @@
+//TODO: Design a bank system supporting transfer/deposit/withdraw with balance validation - LeetCode 2408
+// Time: O(1) per operation
+// Space: O(n) - balance array of n accounts
+
 public class Bank {
     private long[] balance;
     private int n;

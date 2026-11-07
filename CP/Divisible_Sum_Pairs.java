@@ -1,3 +1,7 @@
+//TODO: Count pairs (i < j) in an array whose sum is divisible by k - HackerRank divisibleSumPairs
+// Time: O(n^2) - all i<j pairs checked
+// Space: O(1) - only the counter
+
 import java.io.*;
 import java.math.*;
 import java.security.*;

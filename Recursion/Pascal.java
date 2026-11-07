@@ -1,3 +1,7 @@
+//TODO: Generate Pascal's triangle of numRows with recursion - LeetCode 118
+// Time: O(n^2) - build all rows
+// Space: O(n^2) - the returned triangle
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
