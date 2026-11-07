@@ -46,24 +46,31 @@ A clean, logical hierarchy for easy code review and navigation.
 
 ```text
 DSA-in-Java/
-├── 📂 Patterns/            # 16 unique problems (17 files, Pattern2=Pattern3)
-├── 📂 Basic Maths/         # 31 unique problems (39 files with optimizations)
-│   ├── 📁 Array_Operations/  # 6 problems (9 files: Duplicate×3, SortedSquares×2)
-│   ├── 📁 Divisors/          # 3 problems (5 files: Divisors×2, PerfectNumber×2)
-│   ├── 📁 HCF_LCM/           # 2 problems (3 files: LCM×2)
-│   ├── 📁 Miscellaneous/     # 7 problems (8 files: UniqueChar×2)
-│   ├── 📁 Modulus_Digit/     # 9 problems (10 files: HappyNumber×2)
-│   └── 📁 Sieve_Prime/       # 4 problems (all unique)
-├── 📂 Recursion/           # 15 unique problems (dual approaches in same files)
-│   ├── Fibonacci, Tribonacci, Climbing Stairs (iterative + recursive)
-│   ├── Pascal's Triangle, Power(x,n) (both approaches commented)
-│   └── Reverse Array/String (3 methods in Reverse_Array.java)
-├── 📂 Codeforces/          # 3 unique problems (competitive programming)
-│   ├── 📁 800-1000/          # 2 problems (Domino Piling, Watermelon)
-│   └── 📁 1001-1500/         # 1 problem (Laptops - sorting + greedy)
-├── 📂 JAVA COLLECTIONS/    # 15 reference files (NOT problems)
-└── 📂 Misc/                # 3 unique problems (Bank, FizzBuzz, Palindrome variant)
+├── 📂 Basics/
+│   ├── 📁 Patterns/           # 17 pattern problems + PATTERN_RULES.txt method guide
+│   ├── 📁 Basic Maths/        # 38 files in 6 subfolders
+│   │   ├── Array_Operations/  # 7 (AP, Plus1, Duplicate×2, SortedSquares×2)
+│   │   ├── Divisors/          # 5 (Divisors×2, PerfectNumber×2, Ugly)
+│   │   ├── HCF_LCM/           # 3 (HCF, LCM×2)
+│   │   ├── Miscellaneous/     # 9 (Power2/3, SQRT, Expo, Excel, UniqueChar×2…)
+│   │   ├── Modulus_Digit/     # 10 (digits, palindrome, happy×2, repunit…)
+│   │   └── Sieve_Prime/       # 4 (Prime, Count, Range, SPF)
+│   ├── 📁 Basic Array/        # 4 fundamentals (sum, reverse, sort-check, odd count)
+│   ├── 📁 Basic Strings/      # 3 fundamentals (reverse, palindrome, anagram)
+│   ├── 📁 Basic Hashing/      # 16 (frequency arrays → HashMap/HashSet problems)
+│   ├── 📁 Basic Recursion/    # 15 warm-ups (print, factorial, reverse, digit sums)
+│   └── 📁 JAVA COLLECTIONS/   # 15 reference demos (NOT problems)
+├── 📂 Recursion/              # 5 intermediate problems
+│   └── 📁 Medium/             # Kth_Symbol (LeetCode 779)
+├── 📂 Strings/
+│   ├── 📁 Easy/               # 4 (Isomorphic, Rotate, LargestOdd, Prefix)
+│   └── 📁 Medium/             # 1 (Sort by frequency)
+├── 📂 CP/                     # 2 HackerRank problems
+└── 📂 Misc/                   # 3 standalone (Bank, FizzBuzz, Palindrome variant)
 
+Every folder has its own README with a linked file index, topic notes and
+per-approach time/space complexity; every .java file starts with a //TODO:
+problem statement + complexity header.
 ```
 
 ---
