@@ -17,37 +17,30 @@ public class Freq_of_2nd_Most_Element {
             frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
         }
 
-        // Track the highest and second highest frequencies
-        int highestFreq = 0;
-        int secondHighestFreq = 0;
-
-        for (int freq : frequencyMap.values()) {
-            if (freq > highestFreq) {
-                secondHighestFreq = highestFreq;
-                highestFreq = freq;
-            } else if (freq > secondHighestFreq && freq < highestFreq) {
-                secondHighestFreq = freq;
-            }
-        }
-
-        // If no second highest frequency exists (e.g., all elements have the same frequency)
-        if (secondHighestFreq == 0) {
-            return -1;
-        }
-
-        // Smallest element with the second highest frequency
-        int resultElement = Integer.MAX_VALUE;
-        boolean found = false;
+        // TODO: Find the element with the second-highest frequency in an array
+        int maxFreq = 0, secondFreq = 0;
+        int maxEle = -1, secondEle = -1;
 
         for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {
-            if (entry.getValue() == secondHighestFreq) {
-                if (entry.getKey() < resultElement) {
-                    resultElement = entry.getKey();
-                    found = true;
+            int ele = entry.getKey();
+            int freq = entry.getValue();
+
+            if (freq > maxFreq) {
+                secondFreq = maxFreq;
+                secondEle = maxEle;
+                maxFreq = freq;
+                maxEle = ele;
+            } else if (freq > secondFreq) {
+                secondFreq = freq;
+                secondEle = ele;
+            } else if (freq == secondFreq) {
+                if (secondEle == -1 || ele < secondEle) {
+                    secondEle = ele;
                 }
             }
         }
 
-        return found ? resultElement : -1;
+        // If no second highest frequency exists (e.g., all elements have the same frequency)
+        return secondFreq == 0 ? -1 : secondEle;
     }
 }
