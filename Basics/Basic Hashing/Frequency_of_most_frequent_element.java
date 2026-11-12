@@ -9,33 +9,34 @@
 import java.util.*;
 
 public class Frequency_of_most_frequent_element {
-
     public int[] findFrequency(int[] arr) {
         if (arr == null || arr.length == 0) return new int[0];
-        
+
         Map<Integer, Integer> map = new HashMap<>();
         for (int num : arr) {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
         int maxFreq = 0, minFreq = Integer.MAX_VALUE;
-        int maxEle = arr[0], minEle = arr[0];
+        int maxEle = Integer.MAX_VALUE, minEle = Integer.MAX_VALUE;
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             int element = entry.getKey();
             int count = entry.getValue();
 
-            if (count > maxFreq) { 
-                maxFreq = count; 
-                maxEle = element; 
+            // For highest frequency (tie-breaker: pick smaller element)
+            if (count > maxFreq || (count == maxFreq && element < maxEle)) {
+                maxFreq = count;
+                maxEle = element;
             }
-            if (count < minFreq) { 
-                minFreq = count; 
-                minEle = element; 
+
+            // For lowest frequency (tie-breaker: pick smaller element)
+            if (count < minFreq || (count == minFreq && element < minEle)) {
+                minFreq = count;
+                minEle = element;
             }
         }
 
-        // Returns an array containing {maxElement, minElement}
         return new int[] { maxEle, minEle };
     }
 }
